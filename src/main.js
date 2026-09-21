@@ -6,9 +6,11 @@ import Material from '@primeuix/themes/material';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import Tooltip from 'primevue/tooltip';
+import i18n from "./i18n.js";
 
 const primeUiLicenseKey = import.meta.env.VITE_PRIME_UI_LICENSE_KEY;
 
 createApp(App)
     .use(PrimeVue, { theme: { preset: Material}, ripple: true, license: primeUiLicenseKey})
+    .use(i18n)
     .mount('#app')
