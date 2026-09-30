@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "lc2025201asi0730sandbox",
     "public": "dist",
     "ignore": [
       "firebase.json",
@@ -10,11 +9,8 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "index.html"
+        "destination": "/index.html"
       }
-    ],
-    "frameworksBackend": {
-      "region": "us-central1"
-    }
+    ]
   }
 }
